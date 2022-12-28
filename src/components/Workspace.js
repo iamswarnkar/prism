@@ -50,13 +50,15 @@ import React, {
             ctx.current.lineTo(x, 70);
             ctx.current.stroke();
             setPosition({ x, y });
+            console.log('ctx',ctx.current.moveTo(position.x, 70))
           } else if (tools === 'prism') {
             ctx.current.beginPath();
             ctx.current.lineJoin = 'round';
-            ctx.current.moveTo(position.x, 90);
+            ctx.current.moveTo(position.x, 70);
             ctx.current.lineWidth = 1;
-            ctx.current.lineTo(190, 80);
-            ctx.current.lineTo(30, 80 * Math.cos(Math.PI / 6));
+            // ctx.current.moveTo(100, x);
+            ctx.current.lineTo(100, 200);
+            ctx.current.lineTo(200,  100);
             ctx.current.closePath();
             ctx.current.strokeStyle = 'yellow';
             ctx.current.stroke();

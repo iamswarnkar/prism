@@ -2,7 +2,6 @@ import React from 'react';
 
 export default function Navbar({ handleDownload, createRay }) {
   function handleRay() {
-    createRay('line');
   }
 
   function handlePrism() {
